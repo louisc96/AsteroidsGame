@@ -1,6 +1,6 @@
 class Spaceship extends Floater
 {
-  public SpaceShip()
+  public void SpaceShip()
  {
     myCenterX = 500;
     myCenterY = 350;
