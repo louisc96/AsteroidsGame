@@ -1,15 +1,15 @@
 class Spaceship extends Floater
 {
-  public void SpaceShip()
- {
-    myCenterX = 500;
-    myCenterY = 350;
+  public Spaceship()
+  {
+    myCenterX = 200;
+    myCenterY = 250;
     corners = 15;
     int[] xC = {0, -10, -14, -10, 0, 10, 12, 22, 20, 12, 12, 12, 20, 22, 12, 10};
     int[] yC = {14, 10, 0, -10, -14, -10, -8, -6, -4, -2, 2, 4, 6, 8, 10};
     xCorners = xC;
     yCorners = yC;
-
+    myColor = color(0, 0, 135);
   }
   public void show() {
     stroke(255);
