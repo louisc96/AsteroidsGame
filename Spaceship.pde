@@ -15,27 +15,33 @@ class Spaceship extends Floater
     stroke(255);
     super.show();
   }
-  //setters
-  public void setX(int x) {
-    myCenterX = x;
+  public void hyperspace() {
+    myPointDirection = (int)(Math.random()*360);
+    myXspeed = 0;
+    myYspeed = 0;
+    myCenterX = (int)(Math.random()*width);
+    myCenterY = (int)(Math.random()*height);
   }
-  public void setY(int y) {
-    myCenterY = y;
-  }
-  public void setMyXspeed(double x) {
-    myXspeed = (double)x;
-  }
-  public void setMyYspeed(double y) {
-    myYspeed = (double)y;
-  }
-  public void setPointDirection(int degrees) {
-    myPointDirection = degrees;
-  }
+  public void setCenterX(int x) {
+     myCenterX = x;
+   }
+   public void setCenterY(int y) {
+     myCenterY = y;
+   }
+   public void setMyXspeed(double x) {
+     myXspeed = (double)x;
+   }
+   public void setMyYspeed(double y) {
+     myYspeed = (double)y;
+   }
+   public void setPointDirection(int degrees) {
+     myPointDirection = degrees;
+   }
   //getters
-  public int getY() {
+  public int getCenterY() {
     return (int)myCenterY;
   }
-  public int getX() {
+  public int getCenterX() {
     return (int)myCenterX;
   }
   public double getMyXspeed() {
